@@ -57,7 +57,7 @@ module.exports = Zakk = async (sock, msg, chatUpdate, store) => {
     if (setting.autoAI) {
         if (budy) {
             try {
-            if (setting.keyopenai === 'ISI_APIKEY_OPENAI_DISINI') return reply('Mohon Isi Api Di config.js')
+            if (setting.keyopenai === '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') return reply('Mohon Isi Api Di config.js')
             const configuration = new Configuration({
               apiKey: setting.keyopenai, 
             });
@@ -85,7 +85,7 @@ module.exports = Zakk = async (sock, msg, chatUpdate, store) => {
             switch(command) { 
                 case 'ai':
                     try {
-                        if (setting.keyopenai === 'ISI_APIKEY_OPENAI_DISINI') return reply('Mohon Isi Api Di config.js')
+                        if (setting.keyopenai === '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') return reply('Mohon Isi Api Di config.js')
                         if (!text) return reply(`Chat dengan AI.\n\nContoh:\n${prefix}${command} Apa itu resesi`)
                         const configuration = new Configuration({
                             apiKey: setting.keyopenai,
